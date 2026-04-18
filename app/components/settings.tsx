@@ -85,13 +85,17 @@ export default function Settings({
   return (
     <section
     style={{
-      border: "1px solid #e5e7eb",
-      borderRadius: 8,
-      padding: 12,
-      display: "grid",
-      gap: 12,
-      alignContent: "start",
-    }}
+        border: "1px solid #e5e7eb",
+        borderRadius: 8,
+        padding: 12,
+        display: "grid",
+        gap: 12,
+        alignContent: "start",
+        position: "sticky",
+        top: 16,           
+        maxHeight: "calc(100vh - 32px)",
+        overflowY: "auto",
+      }}
   >
     <NumericMmInput
       label="Szerokosc prostokata"
